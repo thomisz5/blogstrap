@@ -2,7 +2,7 @@
 
 # Blogstrap
 
-* Ruby version 6.1.4.1
+* Ruby version: 6.1.4.1
 
 * System dependencies
 
