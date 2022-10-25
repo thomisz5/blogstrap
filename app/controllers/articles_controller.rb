@@ -3,7 +3,9 @@ class ArticlesController < ApplicationController
 
   #criação das actions
   def index
-    @articles = Article.all #listando os articles
+    current_page = (params[:page] || 1).to_i
+    @articles = Article.order(created_at: :desc).page(current_page).per(2)
+    #listando os articles
     #@ deixa ela publica para a view
   end
 
